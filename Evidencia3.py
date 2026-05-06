@@ -24,5 +24,11 @@ class CryptoMonedas:
 
     def convertir_a_mxn(self, tipo_cambio):
         print(f"Precio en MXN: ${self.__precio * tipo_cambio}")
+    
+    def calcular_valor(self, cantidad):
+        total = self.__precio * cantidad
+        print(f"Valor total: ${total}")
+
+
 
     
