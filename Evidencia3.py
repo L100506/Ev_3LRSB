@@ -28,6 +28,16 @@ class CryptoMonedas:
     def calcular_valor(self, cantidad):
         total = self.__precio * cantidad
         print(f"Valor total: ${total}")
+    
+        def cambio_porcentaje(self, porcentaje):
+        self.__precio += self.__precio * (porcentaje / 100)
+        print(f"Nuevo precio: ${self.__precio}")
+
+    def calcular_ganancia(self, precio_compra, cantidad):
+        inversion = precio_compra * cantidad
+        valor_actual = self.__precio * cantidad
+        print(f"Resultado: ${valor_actual - inversion}")
+
 
 
 
