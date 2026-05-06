@@ -37,6 +37,10 @@ class CryptoMonedas:
         inversion = precio_compra * cantidad
         valor_actual = self.__precio * cantidad
         print(f"Resultado: ${valor_actual - inversion}")
+    
+    def calcular_market_cap(self):
+        market_cap = self.__precio * self.__supply
+        print(f"Market Cap calculado: ${market_cap}")
 
 
 
