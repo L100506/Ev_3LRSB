@@ -18,5 +18,9 @@ class CryptoMonedas:
             self.__precio = nuevo_precio
         else:
             print("Precio inválido")
+    
+    def mostrar_info(self):
+        print(f"{self.nombre} ({self.simbolo}) - Precio: ${self.__precio}")
+
 
     
