@@ -22,5 +22,7 @@ class CryptoMonedas:
     def mostrar_info(self):
         print(f"{self.nombre} ({self.simbolo}) - Precio: ${self.__precio}")
 
+    def convertir_a_mxn(self, tipo_cambio):
+        print(f"Precio en MXN: ${self.__precio * tipo_cambio}")
 
     
