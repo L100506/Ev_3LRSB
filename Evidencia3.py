@@ -7,3 +7,16 @@ class CryptoMonedas:
         self.__capitalizacion = capitalizacion
         self.__supply = supply
 
+    def get_precio(self):
+        return self.__precio
+
+    def get_supply(self):
+        return self.__supply
+
+    def set_precio(self, nuevo_precio):
+        if nuevo_precio > 0:
+            self.__precio = nuevo_precio
+        else:
+            print("Precio inválido")
+
+    
